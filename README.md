@@ -26,7 +26,7 @@ For each answered task, the benchmark:
 4. saves the raw judgment as JSON
 5. builds aggregate reports across the submission
 
-The default benchmark bundled with the repository is [benchmarks/core-v1.json](/Users/narekgevorgyan/Documents/GitHub/ai-crypto-deep-research-benchmark/benchmarks/core-v1.json).
+The default benchmark bundled with the repository is [benchmarks/core-v1.json](./benchmarks/core-v1.json).
 
 ## Quick Start
 
@@ -141,7 +141,7 @@ Minimal example:
 
 Relevant schema:
 
-- [schemas/benchmark.schema.json](/Users/narekgevorgyan/Documents/GitHub/ai-crypto-deep-research-benchmark/schemas/benchmark.schema.json)
+- [schemas/benchmark.schema.json](./schemas/benchmark.schema.json)
 
 ### Submission File
 
@@ -165,7 +165,7 @@ Minimal example:
 
 Relevant schema:
 
-- [schemas/submission.schema.json](/Users/narekgevorgyan/Documents/GitHub/ai-crypto-deep-research-benchmark/schemas/submission.schema.json)
+- [schemas/submission.schema.json](./schemas/submission.schema.json)
 
 ## Judge Pipeline
 
@@ -257,7 +257,7 @@ Example:
 
 Relevant schema:
 
-- [schemas/judgment.schema.json](/Users/narekgevorgyan/Documents/GitHub/ai-crypto-deep-research-benchmark/schemas/judgment.schema.json)
+- [schemas/judgment.schema.json](./schemas/judgment.schema.json)
 
 ### Aggregate Reports
 
@@ -275,11 +275,11 @@ Relevant schema:
 
 Key files:
 
-- [benchmarks/core-v1.json](/Users/narekgevorgyan/Documents/GitHub/ai-crypto-deep-research-benchmark/benchmarks/core-v1.json)
-- [examples/submission.json](/Users/narekgevorgyan/Documents/GitHub/ai-crypto-deep-research-benchmark/examples/submission.json)
-- [run-benchmark.js](/Users/narekgevorgyan/Documents/GitHub/ai-crypto-deep-research-benchmark/run-benchmark.js)
-- [src/judge.js](/Users/narekgevorgyan/Documents/GitHub/ai-crypto-deep-research-benchmark/src/judge.js)
-- [src/score.js](/Users/narekgevorgyan/Documents/GitHub/ai-crypto-deep-research-benchmark/src/score.js)
+- [benchmarks/core-v1.json](./benchmarks/core-v1.json)
+- [examples/submission.json](./examples/submission.json)
+- [run-benchmark.js](./run-benchmark.js)
+- [src/judge.js](./src/judge.js)
+- [src/score.js](./src/score.js)
 
 ## Scope
 

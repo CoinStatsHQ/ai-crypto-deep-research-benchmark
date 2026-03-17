@@ -11,6 +11,16 @@
     "url": "https://github.com/CoinStatsHQ/ai-crypto-deep-research-benchmark/issues"
   },
   "homepage": "https://github.com/CoinStatsHQ/ai-crypto-deep-research-benchmark#readme",
+  "files": [
+    "src",
+    "benchmarks",
+    "schemas",
+    "examples",
+    "run-benchmark.js",
+    "README.md",
+    "LICENSE",
+    ".env.example"
+  ],
   "bin": {
     "ai-crypto-deep-research-benchmark": "run-benchmark.js"
   },
