@@ -2,7 +2,7 @@
   "benchmark_id": "core-v1",
   "name": "AI Crypto Deep Research Benchmark",
   "description": "Public benchmark tasks for evaluating markdown-only crypto deep research answers.",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "tasks": [
     {
       "id": "deep-research-001",
@@ -111,6 +111,114 @@
       ],
       "minimum_citations": 5,
       "minimum_words": 700
+    },
+    {
+      "id": "deep-research-007",
+      "category": "stablecoin-resilience",
+      "prompt": "Compare USDT, USDC, Ethena USDe, and Sky Dollar (USDS) as of 2026-03-17 across reserve design, redemption mechanics, yield source, depeg history, and regulatory risk. Which looks most resilient in a real stress event, and why?",
+      "expectations": [
+        "Cover all four stablecoin systems",
+        "Explain reserve design, redemption path, and yield source for each",
+        "Discuss depeg history or stress-test failure modes",
+        "Offer a defensible resilience ranking with clear caveats"
+      ],
+      "red_flags": [
+        "Treats all dollar-pegged assets as equivalent",
+        "Ignores redemption mechanics or reserve composition",
+        "Makes a winner declaration without downside analysis"
+      ],
+      "minimum_citations": 5,
+      "minimum_words": 800
+    },
+    {
+      "id": "deep-research-008",
+      "category": "rwa-collateral-rails",
+      "prompt": "Analyze whether tokenized Treasury and RWA products are becoming real DeFi collateral rails or remain mostly parked yield as of 2026-03-17. Use Ondo, the BlackRock BUIDL and Securitize stack, Maple, and Centrifuge as case studies.",
+      "expectations": [
+        "Use all requested case studies or clearly explain any substitution",
+        "Separate passive yield parking from actual collateral integration",
+        "Discuss liquidity, composability, and regulatory constraints",
+        "Reach a defensible conclusion on whether RWAs are becoming core rails"
+      ],
+      "red_flags": [
+        "Equates asset growth with DeFi composability",
+        "Ignores permissioning or redemption frictions",
+        "Uses TVL growth as sufficient proof of product-market fit"
+      ],
+      "minimum_citations": 5,
+      "minimum_words": 800
+    },
+    {
+      "id": "deep-research-009",
+      "category": "unlock-and-emissions-risk",
+      "prompt": "Find crypto tokens facing meaningful circulating-supply pressure from scheduled unlocks, treasury sales, or incentive emissions between 2026-04-01 and 2026-12-31. Separate headline unlock size from realistic liquid sell pressure.",
+      "expectations": [
+        "Identify multiple tokens with material upcoming supply pressure",
+        "Distinguish scheduled unlocks, treasury sales, and incentive emissions",
+        "Explain why headline unlock size can differ from liquid sell pressure",
+        "State assumptions and uncertainty where schedules or treasury behavior are unclear"
+      ],
+      "red_flags": [
+        "Treats fully diluted supply and liquid float as the same thing",
+        "Uses stale unlock calendars or outdated token schedules",
+        "Assumes every unlocked token is immediately sold"
+      ],
+      "minimum_citations": 5,
+      "minimum_words": 750
+    },
+    {
+      "id": "deep-research-010",
+      "category": "perp-market-structure",
+      "prompt": "Analyze whether perpetual futures trading is structurally migrating on-chain as of 2026-03-17. Compare Hyperliquid, dYdX, Jupiter, and major centralized exchanges on liquidity quality, product breadth, execution trust, and where CEXs still dominate.",
+      "expectations": [
+        "Compare all requested venue types rather than just one chain or one exchange",
+        "Use market structure evidence such as volume quality, liquidity depth, and product breadth",
+        "Separate temporary trading spikes from durable share shifts",
+        "Explain where centralized venues still have structural advantages"
+      ],
+      "red_flags": [
+        "Uses one short time window as the whole story",
+        "Equates raw volume with durable market-share capture",
+        "Ignores execution quality or product coverage differences"
+      ],
+      "minimum_citations": 5,
+      "minimum_words": 850
+    },
+    {
+      "id": "deep-research-011",
+      "category": "ai-agent-token-reality-check",
+      "prompt": "Evaluate the crypto AI-agent token sector as of 2026-03-17. Which projects show real product usage, fee generation, or distribution, and which mostly trade on narrative beta? Use one consistent framework across the projects you select.",
+      "expectations": [
+        "Define the sector and selection criteria clearly",
+        "Apply one consistent framework across multiple leading projects",
+        "Distinguish product usage, distribution, and revenue from token price action",
+        "Acknowledge data-quality limits and where evidence is weak"
+      ],
+      "red_flags": [
+        "Uses marketing copy instead of evidence of usage",
+        "Confuses social attention with product traction",
+        "Makes sector-wide claims without a clear comparison framework"
+      ],
+      "minimum_citations": 6,
+      "minimum_words": 850
+    },
+    {
+      "id": "deep-research-012",
+      "category": "btc-treasury-strategies",
+      "prompt": "Analyze whether corporate Bitcoin treasury strategies create durable shareholder value or mainly repackage leveraged BTC exposure as of 2026-03-17. Compare Strategy, Metaplanet, Semler Scientific, and at least one newer entrant on funding structure, dilution, downside reflexivity, and market perception.",
+      "expectations": [
+        "Compare at least four public-company treasury strategies",
+        "Explain financing structure, dilution, and leverage mechanics",
+        "Discuss downside reflexivity and why market pricing may diverge from spot BTC exposure",
+        "Offer a balanced conclusion rather than a one-sided bull or bear case"
+      ],
+      "red_flags": [
+        "Treats treasury equities as simple spot BTC proxies",
+        "Ignores dilution, debt terms, or refinancing risk",
+        "Confuses market premium with durable business quality"
+      ],
+      "minimum_citations": 5,
+      "minimum_words": 850
     }
   ]
 }
