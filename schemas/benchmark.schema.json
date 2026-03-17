@@ -1,0 +1,36 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Benchmark",
+  "type": "object",
+  "required": ["benchmark_id", "name", "tasks"],
+  "properties": {
+    "benchmark_id": { "type": "string" },
+    "name": { "type": "string" },
+    "description": { "type": "string" },
+    "version": { "type": "string" },
+    "tasks": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["id", "category", "prompt", "expectations", "red_flags"],
+        "properties": {
+          "id": { "type": "string" },
+          "category": { "type": "string" },
+          "prompt": { "type": "string" },
+          "expectations": {
+            "type": "array",
+            "items": { "type": "string" }
+          },
+          "red_flags": {
+            "type": "array",
+            "items": { "type": "string" }
+          },
+          "minimum_citations": { "type": "integer", "minimum": 0 },
+          "minimum_words": { "type": "integer", "minimum": 0 }
+        },
+        "additionalProperties": true
+      }
+    }
+  },
+  "additionalProperties": true
+}

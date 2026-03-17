@@ -1,0 +1,25 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Submission",
+  "type": "object",
+  "required": ["submission_id", "model_name", "generated_at", "answers"],
+  "properties": {
+    "submission_id": { "type": "string" },
+    "model_name": { "type": "string" },
+    "generated_at": { "type": "string" },
+    "notes": { "type": "string" },
+    "answers": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["task_id", "answer_markdown"],
+        "properties": {
+          "task_id": { "type": "string" },
+          "answer_markdown": { "type": "string" }
+        },
+        "additionalProperties": true
+      }
+    }
+  },
+  "additionalProperties": true
+}

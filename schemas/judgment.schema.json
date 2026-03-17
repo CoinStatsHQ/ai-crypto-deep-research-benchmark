@@ -1,0 +1,26 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Judgment",
+  "type": "object",
+  "required": ["verdict", "overall_score", "summary", "criteria"],
+  "properties": {
+    "verdict": { "type": "string" },
+    "overall_score": { "type": "number" },
+    "summary": { "type": "string" },
+    "criteria": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["name", "score", "max_score", "reasoning"],
+        "properties": {
+          "name": { "type": "string" },
+          "score": { "type": "number" },
+          "max_score": { "type": "number" },
+          "reasoning": { "type": "string" }
+        },
+        "additionalProperties": true
+      }
+    }
+  },
+  "additionalProperties": true
+}

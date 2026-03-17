@@ -1,0 +1,16 @@
+{
+  "submission_id": "sample-submission",
+  "model_name": "Example Research Model",
+  "generated_at": "2026-03-17T00:00:00.000Z",
+  "notes": "Example markdown-only submission file for the benchmark.",
+  "answers": [
+    {
+      "task_id": "deep-research-001",
+      "answer_markdown": "# Projects Without A Token And $10M+ Raises Since 2024\n\nThe list below is directional rather than exhaustive because private rounds and token plans can change quietly. I focused on projects with explicit fundraising coverage plus some evidence around token status.\n\n## Candidates\n\n- Project Alpha reportedly raised $12 million from specialist crypto investors. Coverage suggests it has not announced a token yet. [Fundraise report](https://www.theblock.co/post/123/example-alpha) [Project docs](https://alpha.example/docs)\n- Project Beta disclosed a $20 million round and its product materials currently reference points but not a live token. [Round announcement](https://beta.example/blog/series-a) [Product docs](https://beta.example/docs/overview)\n\n## Caveats\n\nThis answer needs deeper verification before claiming completeness because token plans can change faster than fundraising coverage.\n"
+    },
+    {
+      "task_id": "deep-research-004",
+      "answer_markdown": "# Revenue Model Comparison\n\nUniswap, Aave, and MakerDAO all monetize different layers of crypto market structure, so the sustainability question is really about whether usage is durable and whether governance can actually capture value.\n\n## Protocol Comparison\n\n- Uniswap captures value through swap activity and governance-controlled fee switches. [Uniswap protocol overview](https://docs.uniswap.org/concepts/uniswap-protocol)\n- Aave earns through lending spreads, liquidations, and service fees tied to credit demand. [Aave governance docs](https://aave.com/docs/developers/governance)\n- MakerDAO monetizes collateralized credit and treasury management around DAI and related products. [Maker documentation](https://makerdao.com/en/whitepaper/)\n\n## Bottom Line\n\nMakerDAO may be structurally resilient because recurring credit demand and treasury management are harder to commoditize, but execution and governance still matter.\n"
+    }
+  ]
+}

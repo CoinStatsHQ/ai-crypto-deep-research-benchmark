@@ -1,0 +1,116 @@
+{
+  "benchmark_id": "core-v1",
+  "name": "AI Crypto Deep Research Benchmark",
+  "description": "Public benchmark tasks for evaluating markdown-only crypto deep research answers.",
+  "version": "1.0.0",
+  "tasks": [
+    {
+      "id": "deep-research-001",
+      "category": "funding-and-token-status",
+      "prompt": "Find crypto projects without a token that raised more than $10M since 2024. Verify token status, funding amount, and major investors.",
+      "expectations": [
+        "List qualifying projects",
+        "Verify token status with explicit evidence",
+        "Include funding amount and lead investors",
+        "Acknowledge coverage limits if completeness is uncertain"
+      ],
+      "red_flags": [
+        "Treats rumor as confirmation",
+        "Claims token status without evidence",
+        "Presents an incomplete list as exhaustive"
+      ],
+      "minimum_citations": 4,
+      "minimum_words": 500
+    },
+    {
+      "id": "deep-research-002",
+      "category": "ecosystem-deep-dive",
+      "prompt": "Research the Hyperliquid ecosystem: team background, token design, market structure advantages, recent partnerships, and major risks.",
+      "expectations": [
+        "Cover team or founding context",
+        "Explain token design or incentive mechanics",
+        "Assess competitive advantages and risks",
+        "Use multiple source types"
+      ],
+      "red_flags": [
+        "Pure marketing language",
+        "No discussion of risks",
+        "No source diversity"
+      ],
+      "minimum_citations": 4,
+      "minimum_words": 600
+    },
+    {
+      "id": "deep-research-003",
+      "category": "market-structure",
+      "prompt": "Analyze the correlation between Bitcoin ETF inflows, on-chain whale accumulation, and BTC price action over the last 6 months. Explain what is signal and what is noise.",
+      "expectations": [
+        "Cover all three variables",
+        "Separate correlation from causation",
+        "Discuss timing and lag effects",
+        "State uncertainty clearly"
+      ],
+      "red_flags": [
+        "Claims causation without support",
+        "Ignores conflicting evidence",
+        "Uses stale time framing"
+      ],
+      "minimum_citations": 5,
+      "minimum_words": 700
+    },
+    {
+      "id": "deep-research-004",
+      "category": "protocol-comparison",
+      "prompt": "Compare the fee revenue models of Uniswap, Aave, and MakerDAO. Which looks most sustainable over the next market cycle, and why?",
+      "expectations": [
+        "Explain each protocol's revenue model",
+        "Compare sustainability drivers and risks",
+        "Reference current or recent protocol context",
+        "Offer a defensible conclusion"
+      ],
+      "red_flags": [
+        "Shallow list with no comparison",
+        "No downside analysis",
+        "Unsupported winner declaration"
+      ],
+      "minimum_citations": 4,
+      "minimum_words": 650
+    },
+    {
+      "id": "deep-research-005",
+      "category": "layer2-research",
+      "prompt": "Build a deep research brief on Bitcoin Layer 2s comparing Lightning, Stacks, RGB, and Citrea across adoption, developer activity, and product readiness.",
+      "expectations": [
+        "Cover all four ecosystems",
+        "Compare adoption and development signals",
+        "Discuss product readiness and limitations",
+        "Avoid false equivalence when data quality differs"
+      ],
+      "red_flags": [
+        "Omits one of the requested projects",
+        "Pretends incomparable data is directly comparable",
+        "No caveats about immature ecosystems"
+      ],
+      "minimum_citations": 5,
+      "minimum_words": 750
+    },
+    {
+      "id": "deep-research-006",
+      "category": "narrative-investigation",
+      "prompt": "Investigate whether there is alpha in following smart-money wallets that bought tokens before major 10x runs. Focus on timing, wallet type, token profile, and false positives.",
+      "expectations": [
+        "Evaluate whether the hypothesis holds",
+        "Include false-positive scenarios",
+        "Differentiate wallet archetypes",
+        "Avoid overclaiming actionable alpha"
+      ],
+      "red_flags": [
+        "Cherry-picked examples",
+        "No false-positive analysis",
+        "Turns a weak pattern into a trading promise"
+      ],
+      "minimum_citations": 5,
+      "minimum_words": 700
+    }
+  ]
+}

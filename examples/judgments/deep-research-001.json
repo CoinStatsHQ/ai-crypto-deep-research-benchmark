@@ -1,0 +1,13 @@
+{
+  "verdict": "borderline",
+  "overall_score": 61,
+  "summary": "The answer shows decent structure and caution, but it is too short and the evidence base is thin for a benchmark deep-research response.",
+  "criteria": [
+    { "name": "task_completion", "score": 11, "max_score": 20, "reasoning": "Only a couple of candidates are covered." },
+    { "name": "factual_precision", "score": 13, "max_score": 20, "reasoning": "Claims are cautious, but still need more support." },
+    { "name": "citation_grounding", "score": 10, "max_score": 15, "reasoning": "Some grounding is present." },
+    { "name": "source_diversity", "score": 8, "max_score": 15, "reasoning": "Very limited source spread." },
+    { "name": "analytical_depth", "score": 11, "max_score": 20, "reasoning": "Not much synthesis." },
+    { "name": "uncertainty_calibration", "score": 8, "max_score": 10, "reasoning": "Good caveats." }
+  ]
+}
